@@ -3,7 +3,7 @@
 # Click Below Image to Deploy
 [![Deploy](https://telegra.ph/file/cb7b0aead06c96955323e.jpg)](https://heroku.com/deploy?template=https://github.com/sunac01/oglum.git)
 # DEPLOY
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sunac01/oglum.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sunac01/nefis.git)
 
 # Group
 You can also join our support group [HERE!](https://t.me/TamilSupport) 👨🏻‍💻
