@@ -8,11 +8,8 @@ from TamilBots import app, LOGGER
 from TamilBots.TamilBots import ignore_blacklisted_users
 from TamilBots.sql.chat_sql import add_chat_to_db
 
-start_text = """
-       Welcome! I am **@NetdMusicBot** 
-🇬🇧 Usage : /e Music Name ㅤㅤㅤㅤㅤㅤㅤ
-▪️
-🇹🇷 Kullanım : /e Müzik Adı ㅤㅤㅤㅤㅤㅤ
+start_text =""" ("(https://telegra.ph/file/a05f929282c3158544d5d.mp4) MERHABA BEN DJ NEFİSE DESTEKÇİM @Azerbesk.
+Beni ᴇʙᴛ | Nefise🌼 İçin Özel Olarak Tasarladı. O Yüzden Başka Gruplara Eklenmemi Yasakladı. O Özel İnsanlara Güzel Hediyeler Vermeyi Sever . 🌹🌸")
 """
 
 owner_help = """
@@ -30,9 +27,9 @@ async def start(client, message):
     name = message.from_user["first_name"]
     if message.chat.type == "private":
         btn = InlineKeyboardMarkup([
-            [InlineKeyboardButton("📣 Channel", url="http://t.me/Netdbots"),
-            InlineKeyboardButton("🇬🇧 Add to Group", url="https://t.me/NetdMusicbot?startgroup=true"),
-            InlineKeyboardButton("🇹🇷 Gruba Ekle", url="https://t.me/NetdMusicbot?startgroup=true")]
+            [InlineKeyboardButton("📣 Channel", url="http://t.me/KaybedenlerOrkestrasi"),
+            InlineKeyboardButton("🌼 Nefise", url="https://t.me/YineBenHakliyim"),
+            InlineKeyboardButton("🌍 Yapımcı", url="https://t.me/Azerbesk")]
             ]
         )
     else:
@@ -41,14 +38,13 @@ async def start(client, message):
     add_chat_to_db(str(chat_id))
 
 
-@app.on_message(filters.create(ignore_blacklisted_users) & filters.command("start@netdmusicbot"))
+@app.on_message(filters.create(ignore_blacklisted_users) & filters.command("n"))
 async def help(client, message):
     if message.from_user["id"] == OWNER_ID:
         await message.reply(owner_help)
         return ""
     text = """
-    🇬🇧 Hey! I must be authorized.
-    🇹🇷 Hey! Yetkili olmalıyım.
+🌼 İyiki Varsın DJ NEFİSE 🌼 Herzaman Sen Haklısın :D
     """
     await message.reply(text)
 
