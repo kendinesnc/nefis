@@ -28,7 +28,7 @@ async def song(client, message):
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "e"
     if args.startswith(" "):
-        await message.reply("Error! 👉🏼 /e Song Name")
+        await message.reply("HATA! 👉🏼 /e Şarkı Adı")
         return ""
     status = await message.reply("👸🏻 Dj Nefise Şarkıyı Gönderiyor Biraz Bekle Tatlım 🌼")
     video_link = yt_search(args)
