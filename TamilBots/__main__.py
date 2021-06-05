@@ -46,7 +46,7 @@ async def help(client, message):
         await message.reply(owner_help)
         return ""
     text = """
-🌼 İyiki Varsın DJ NEFİSE 🌼 Herzaman Sen Haklısın :D
+🌼 İyiki Varsın @YineBenHakliyim 🌼 Herzaman Sen Haklısın :D
     """
     await message.reply(text)
 
