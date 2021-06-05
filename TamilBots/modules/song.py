@@ -51,7 +51,7 @@ async def song(client, message):
         audio=f"{str(user_id)}.mp3",
         duration=int(yt.length),
         title=str(yt.title),
-        performer="@NetdMusicBot",
+        performer="DJ NEFİSE",
         reply_to_message_id=message.message_id,        
     )
     await status.delete()
