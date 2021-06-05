@@ -11,7 +11,7 @@ from TamilBots.sql.chat_sql import add_chat_to_db
 start_text =""" Hoşgeldin [{}](tg://user?id={}), 
 **BEN DJ NEFİSE DESTEKÇİM @Azerbesk.
 Beni ᴇʙᴛ | Nefise🌼 İçin Özel Olarak Tasarladı. O Yüzden Başka Gruplara Eklenmemi Yasakladı. O Özel İnsanlara Güzel Hediyeler Vermeyi Sever . 🌹🌸**
-(https://telegra.ph/file/a05f929282c3158544d5d.mp4
+https://telegra.ph/file/a05f929282c3158544d5d.mp4
 """
 
 owner_help = """
@@ -30,8 +30,8 @@ async def start(client, message):
     if message.chat.type == "private":
         btn = InlineKeyboardMarkup([
             [InlineKeyboardButton("📣 Channel", url="http://t.me/KaybedenlerOrkestrasi"),
-            InlineKeyboardButton("🌼 Nefise", url="https://t.me/YineBenHakliyim"),
-            InlineKeyboardButton("🌍 Yapımcı", url="https://t.me/Azerbesk")]
+            InlineKeyboardButton("🙎🏻‍♀️ Nefise", url="https://t.me/YineBenHakliyim"),
+            InlineKeyboardButton("🙎🏻‍♂️ Yapımcı", url="https://t.me/Azerbesk")]
             ]
         )
     else:
