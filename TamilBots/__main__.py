@@ -8,10 +8,9 @@ from TamilBots import app, LOGGER
 from TamilBots.TamilBots import ignore_blacklisted_users
 from TamilBots.sql.chat_sql import add_chat_to_db
 
-start_text =""" Hoşgeldin [{}](tg://user?id={}), 
+start_text ="""Hoşgeldin [{}](tg://user?id={}), 
 BEN DJ NEFİSE DESTEKÇİM @Azerbesk.
-Beni ᴇʙᴛ | Nefise🌼 İçin Özel Olarak Tasarladı. O Yüzden Başka Gruplara Eklenmemi Yasakladı. O Özel İnsanlara Güzel Hediyeler Vermeyi Sever . 🌹🌸 <a href='https://telegra.ph/file/a05f929282c3158544d5d.mp4'></a>
-"""
+Beni ᴇʙᴛ | Nefise🌼 İçin Özel Olarak Tasarladı. O Yüzden Başka Gruplara Eklenmemi Yasakladı. O Özel İnsanlara Güzel Hediyeler Vermeyi Sever . 🌹🌸 <a href='https://telegra.ph/file/a05f929282c3158544d5d.mp4'> </a>"""
 
 owner_help = """
 /blacklist user_id
