@@ -30,10 +30,10 @@ async def song(client, message):
     if args.startswith(" "):
         await message.reply("Error! 👉🏼 /e Song Name")
         return ""
-    status = await message.reply("🦸🏼‍♂ Song Loading Please Wait 🔄")
+    status = await message.reply("👸🏻 Dj Nefise Şarkıyı Gönderiyor Biraz Bekle Tatlım 🌼")
     video_link = yt_search(args)
     if not video_link:
-        await status.edit("🥺 Song not found")
+        await status.edit("🥺 Şarkıyı Bulamadım")
         return ""
     yt = YouTube(video_link)
     audio = yt.streams.filter(only_audio=True).first()
@@ -47,7 +47,7 @@ async def song(client, message):
     await app.send_chat_action(message.chat.id, "upload_audio")
     await app.send_audio(
         chat_id=message.chat.id,
-        caption="♥️ @NetdMusicBot 🎶",
+        caption="♥️ Şarkı Hazır Bana Teşekkür Et 🙆🏻‍♀️",
         audio=f"{str(user_id)}.mp3",
         duration=int(yt.length),
         title=str(yt.title),
