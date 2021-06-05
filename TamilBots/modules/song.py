@@ -30,7 +30,7 @@ async def song(client, message):
     if args.startswith(" "):
         await message.reply("HATA! 👉🏼 /e Şarkı Adı")
         return ""
-    status = await message.reply("👸🏻 Dj Nefise Şarkıyı Gönderiyor Biraz Bekle Tatlım 🌼")
+    status = await message.reply("👸🏻 DJ Nefise Şarkıyı Gönderiyor Biraz Bekle Tatlım 🌼")
     video_link = yt_search(args)
     if not video_link:
         await status.edit("🥺 Şarkıyı Bulamadım")
