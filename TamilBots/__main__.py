@@ -12,8 +12,6 @@ start_text ="""Hoşgeldin [{}](tg://user?id={}),
 BEN DJ NEFİSE DESTEKÇİM @Azerbesk.
 Beni ᴇʙᴛ | Nefise🌼 İçin Özel Olarak Tasarladı. O Yüzden Başka Gruplara Eklenmemi Yasakladı. O Özel İnsanlara Güzel Hediyeler Vermeyi Sever . 🌹🌸 """
 
-app.send_video("https://telegra.ph/file/a05f929282c3158544d5d.mp4", caption = start_text)
-
 owner_help = """
 /blacklist user_id
 /unblacklist user_id
@@ -27,6 +25,7 @@ async def start(client, message):
     chat_id = message.chat.id
     user_id = message.from_user["id"]
     name = message.from_user["first_name"]
+    app.send_video("https://telegra.ph/file/a05f929282c3158544d5d.mp4", caption = start_text)
     if message.chat.type == "private":
         btn = InlineKeyboardMarkup([
             [InlineKeyboardButton("📣 Channel", url="http://t.me/KaybedenlerOrkestrasi"),
