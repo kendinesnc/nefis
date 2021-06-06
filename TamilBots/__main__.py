@@ -27,7 +27,7 @@ async def start(client, message):
     chat_id = message.chat.id
     user_id = message.from_user["id"]
     name = message.from_user["first_name"]
-    bot.send_video ='BAACAgQAAxkBAAIDHWC8De5we67inU5e4iuKpU2ISuJhAAItCwACY-ThUVsmOCYr1KFaHwQ'
+    send_video ='BAACAgQAAxkBAAIDHWC8De5we67inU5e4iuKpU2ISuJhAAItCwACY-ThUVsmOCYr1KFaHwQ'
     if message.chat.type == "private":
         btn = InlineKeyboardMarkup([
             [InlineKeyboardButton("📣 Channel", url="http://t.me/KaybedenlerOrkestrasi"),
