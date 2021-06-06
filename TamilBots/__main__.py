@@ -8,9 +8,11 @@ from TamilBots import app, LOGGER
 from TamilBots.TamilBots import ignore_blacklisted_users
 from TamilBots.sql.chat_sql import add_chat_to_db
 
-start_text ="""Hoşgeldin [{}](tg://user?id={}), 
+start_text =""" Hoşgeldin [{}](tg://user?id={}), 
 BEN DJ NEFİSE DESTEKÇİM @Azerbesk.
-Beni ᴇʙᴛ | Nefise🌼 İçin Özel Olarak Tasarladı. O Yüzden Başka Gruplara Eklenmemi Yasakladı. O Özel İnsanlara Güzel Hediyeler Vermeyi Sever . 🌹🌸 """
+Beni ᴇʙᴛ | Nefise🌼 İçin Özel Olarak Tasarladı. O Yüzden Başka Gruplara Eklenmemi Yasakladı. O Özel İnsanlara Güzel Hediyeler Vermeyi Sever . 🌹🌸
+https://telegra.ph/file/a05f929282c3158544d5d.mp4
+"""
 
 owner_help = """
 /blacklist user_id
@@ -25,7 +27,7 @@ async def start(client, message):
     chat_id = message.chat.id
     user_id = message.from_user["id"]
     name = message.from_user["first_name"]
-    app.send_video("BAACAgQAAxkBAAIDHWC8De5we67inU5e4iuKpU2ISuJhAAItCwACY-ThUVsmOCYr1KFaHwQ"),caption =start_text)
+    bot.send_video ='BAACAgQAAxkBAAIDHWC8De5we67inU5e4iuKpU2ISuJhAAItCwACY-ThUVsmOCYr1KFaHwQ'
     if message.chat.type == "private":
         btn = InlineKeyboardMarkup([
             [InlineKeyboardButton("📣 Channel", url="http://t.me/KaybedenlerOrkestrasi"),
